@@ -42,34 +42,34 @@ export default function Countdown() {
   
   return (
     <div className="flex flex-col items-center justify-center py-8">
-      <h2 className="text-5xl font-bold mb-2 absolute z-2 top-14 bg-gray-500 rounded-lg flex items-center justify-center p-4 px-4">OWEEK 2025</h2>
+      <h2 className="text-5xl font-bold mb-2 absolute z-2 top-14 bg-slate-50 rounded-lg flex text-slate-900 items-center justify-center p-4 px-4">OWEEK 2025</h2>
       <div className="flex space-x-4 text-center relative z-1 top-17">
         <div className="flex flex-col items-center">
-          <div className="bg-gray-600 text-white rounded-lg w-50 h-65 flex items-center justify-center text-6xl font-bold">
+          <div className="bg-slate-200 text-slate-800 rounded-lg w-50 h-65 flex items-center justify-center text-6xl font-bold">
             {timeLeft.days}
           </div>
-          <span className="mt-2 text-3xl bg-gray-600 rounded-lg flex items-center justify-center p-4 px-6 w-50 mt-4 font-bold">Days</span>
+          <span className="mt-2 text-3xl bg-slate-200 text-slate-800 rounded-lg flex items-center justify-center p-4 px-6 w-50 mt-4 font-bold">Days</span>
         </div>
         
         <div className="flex flex-col items-center">
-          <div className="bg-gray-600 text-white rounded-lg w-50 h-65 flex items-center justify-center text-6xl font-bold">
+          <div className="bg-slate-200 text-slate-800 rounded-lg w-50 h-65 flex items-center justify-center text-6xl font-bold">
             {timeLeft.hours}
           </div>
-          <span className="mt-2 text-3xl bg-gray-600 rounded-lg flex items-center justify-center p-4 px-6 w-50 mt-4 font-bold">Hours</span>
+          <span className="mt-2 text-3xl bg-slate-200 text-slate-800 rounded-lg flex items-center justify-center p-4 px-6 w-50 mt-4 font-bold">Hours</span>
         </div>
         
         <div className="flex flex-col items-center">
-          <div className="bg-gray-600 text-white rounded-lg w-50 h-65 flex items-center justify-center text-6xl font-bold">
+          <div className="bg-slate-200 text-slate-800 rounded-lg w-50 h-65 flex items-center justify-center text-6xl font-bold">
             {timeLeft.minutes}
           </div>
-          <span className="mt-2 text-3xl bg-gray-600 rounded-lg flex items-center justify-center p-4 px-6 w-50 mt-4 font-bold">Minutes</span>
+          <span className="mt-2 text-3xl bg-slate-200 text-slate-800 rounded-lg flex items-center justify-center p-4 px-6 w-50 mt-4 font-bold">Minutes</span>
         </div>
         
         <div className="flex flex-col items-center">
-          <div className="bg-gray-600 text-white rounded-lg w-50 h-65 flex items-center justify-center text-6xl font-bold">
+          <div className="bg-slate-200 text-slate-800 rounded-lg w-50 h-65 flex items-center justify-center text-6xl font-bold">
             {timeLeft.seconds}
           </div>
-          <span className="mt-2 text-3xl bg-gray-600 rounded-lg flex items-center justify-center p-4 px-6 w-50 mt-4 font-bold">Seconds</span>
+          <span className="mt-2 text-3xl bg-slate-200 text-slate-800 rounded-lg flex items-center justify-center p-4 px-6 w-50 mt-4 font-bold">Seconds</span>
         </div>
       </div>
     </div>
