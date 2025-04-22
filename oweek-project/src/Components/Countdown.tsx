@@ -1,3 +1,6 @@
+'use client';
+// Countdown.tsx
+
 import { useState, useEffect } from 'react';
 
 export default function Countdown() {
@@ -10,7 +13,7 @@ export default function Countdown() {
   
   useEffect(() => {
     // Set the target date: April 30, 2025
-    const targetDate = new Date('April 30, 2025 00:00:00').getTime();
+    const targetDate = new Date('Augist 25, 2025 00:00:00').getTime();
     
     // Update the countdown every second
     const interval = setInterval(() => {
