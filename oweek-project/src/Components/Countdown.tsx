@@ -13,7 +13,7 @@ export default function Countdown() {
   
   useEffect(() => {
     // Set the target date: April 30, 2025
-    const targetDate = new Date('Augist 25, 2025 00:00:00').getTime();
+    const targetDate = new Date('August 25, 2025 00:00:00').getTime();
     
     // Update the countdown every second
     const interval = setInterval(() => {
@@ -42,34 +42,34 @@ export default function Countdown() {
   
   return (
     <div className="flex flex-col items-center justify-center py-8">
-      <h2 className="text-2xl font-bold mb-6">Event Countdown</h2>
-      <div className="flex space-x-4 text-center">
+      <h2 className="text-5xl font-bold mb-2 absolute z-2 top-14 bg-gray-500 rounded-lg flex items-center justify-center p-4 px-4">OWEEK 2025</h2>
+      <div className="flex space-x-4 text-center relative z-1 top-17">
         <div className="flex flex-col items-center">
-          <div className="bg-gray-800 text-white rounded-lg w-24 h-24 flex items-center justify-center text-4xl font-bold">
+          <div className="bg-gray-600 text-white rounded-lg w-50 h-65 flex items-center justify-center text-6xl font-bold">
             {timeLeft.days}
           </div>
-          <span className="mt-2 text-lg">Days</span>
+          <span className="mt-2 text-3xl bg-gray-600 rounded-lg flex items-center justify-center p-4 px-6 w-50 mt-4 font-bold">Days</span>
         </div>
         
         <div className="flex flex-col items-center">
-          <div className="bg-gray-800 text-white rounded-lg w-24 h-24 flex items-center justify-center text-4xl font-bold">
+          <div className="bg-gray-600 text-white rounded-lg w-50 h-65 flex items-center justify-center text-6xl font-bold">
             {timeLeft.hours}
           </div>
-          <span className="mt-2 text-lg">Hours</span>
+          <span className="mt-2 text-3xl bg-gray-600 rounded-lg flex items-center justify-center p-4 px-6 w-50 mt-4 font-bold">Hours</span>
         </div>
         
         <div className="flex flex-col items-center">
-          <div className="bg-gray-800 text-white rounded-lg w-24 h-24 flex items-center justify-center text-4xl font-bold">
+          <div className="bg-gray-600 text-white rounded-lg w-50 h-65 flex items-center justify-center text-6xl font-bold">
             {timeLeft.minutes}
           </div>
-          <span className="mt-2 text-lg">Minutes</span>
+          <span className="mt-2 text-3xl bg-gray-600 rounded-lg flex items-center justify-center p-4 px-6 w-50 mt-4 font-bold">Minutes</span>
         </div>
         
         <div className="flex flex-col items-center">
-          <div className="bg-gray-800 text-white rounded-lg w-24 h-24 flex items-center justify-center text-4xl font-bold">
+          <div className="bg-gray-600 text-white rounded-lg w-50 h-65 flex items-center justify-center text-6xl font-bold">
             {timeLeft.seconds}
           </div>
-          <span className="mt-2 text-lg">Seconds</span>
+          <span className="mt-2 text-3xl bg-gray-600 rounded-lg flex items-center justify-center p-4 px-6 w-50 mt-4 font-bold">Seconds</span>
         </div>
       </div>
     </div>
