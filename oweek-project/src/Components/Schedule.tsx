@@ -6,22 +6,22 @@ import { useState } from "react";
 const scheduleData = [
   {
     day: "DAY 0",
-    title: "PRA OWEEK",
-    date: "16 AUGUST 2024",
-    location: "online (zoom)",
+    title: "TBA",
+    date: "DD-MM-YYYY",
+    location: "LOCATION 1",
     sessions: [
-      "Kloter 1 : 07:15 AM - 09.45 AM",
-      "Kloter 2 : 10:40 AM - 01.00 PM"
+      "lorem ipsum bla bla bla",
+      "lorem ipsum bla bla bla"
     ]
   },
   {
     day: "DAY 1",
-    title: "INTRODUCTION DAY",
-    date: "19 AUGUST 2024",
-    location: "UC Campus",
+    title: "TBA",
+    date: "DD-MM-YYYY",
+    location: "LOCATION 2",
     sessions: [
-      "Session 1 : 08:00 AM - 10.30 AM",
-      "Session 2 : 11:00 AM - 01.30 PM"
+      "lorem ipsum bla bla bla 2",
+      "lorem ipsum bla bla bla 2"
     ]
   },
   // Add more days as needed
@@ -70,15 +70,15 @@ export default function Schedule() {
             ))}
           </div>
           
-          {/* Buttons */}
-          <div className="flex flex-wrap gap-4 justify-center mt-8">
+          
+          {/* <div className="flex flex-wrap gap-4 justify-center mt-8">
             <a className="bg-slate-800 text-white px-4 py-3 md:p-5 rounded-xl cursor-pointer hover:bg-slate-700 transition-colors text-sm md:text-base">
               PENUGASAN
             </a>
             <a className="bg-slate-800 text-white px-4 py-3 md:p-5 rounded-xl cursor-pointer hover:bg-slate-700 transition-colors text-sm md:text-base">
               KETENTUAN
             </a>
-          </div>
+          </div> */}
         </div>
         
         {/* Navigation arrows */}
