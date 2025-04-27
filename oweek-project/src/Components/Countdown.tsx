@@ -37,44 +37,44 @@ export default function Countdown() {
 
   return (
     <div className="relative flex flex-col items-center justify-center py-8">
-      <h2 className="text-6xl font-bold mb-8 text-[#ebebeb]">OWEEK 2025</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
-        {/* Days */}
+        <h2 className="text-[60px] sm:text-[80px] md:text-[80px] lg:text-[100px] xl:text-[100px] font-bold mb-0 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">OWEEK 2025</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
+                {/* Days */}
         <div className="flex flex-col items-center">
-          <div className="bg-slate-200/50 text-slate-800 rounded-lg w-50 h-65 flex items-center justify-center text-6xl font-bold backdrop-blur-sm border-5 border-white">
+          <div className="bg-slate-200/50 text-white rounded-lg w-50 h-65 flex items-center justify-center text-[90px] font-bold backdrop-blur-sm border-5 border-white">
             {timeLeft.days}
           </div>
-          <span className="text-3xl bg-slate-200 text-slate-800 rounded-lg flex items-center justify-center p-4 px-6 w-50 mt-4 font-bold">
+          <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] text-[40px] bg-slate-200/0 text-white rounded-lg flex items-center justify-center p-4 px-6 w-50 font-bold ">
             Days
           </span>
         </div>
 
         {/* Hours */}
         <div className="flex flex-col items-center">
-          <div className="bg-slate-200/50 text-slate-800 rounded-lg w-50 h-65 flex items-center justify-center text-6xl font-bold backdrop-blur-sm border-5 border-white">
+          <div className="bg-slate-200/50 text-white rounded-lg w-50 h-65 flex items-center justify-center text-[90px] font-bold backdrop-blur-sm border-5 border-white">
             {timeLeft.hours}
           </div>
-          <span className="text-3xl bg-slate-200 text-slate-800 rounded-lg flex items-center justify-center p-4 px-6 w-50 mt-4 font-bold">
+          <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] text-[40px] bg-slate-200/0 text-white rounded-lg flex items-center justify-center p-4 px-6 w-50 font-bold">
             Hours
           </span>
         </div>
 
         {/* Minutes */}
         <div className="flex flex-col items-center">
-          <div className="bg-slate-200/50 text-slate-800 rounded-lg w-50 h-65 flex items-center justify-center text-6xl font-bold backdrop-blur-sm border-5 border-white">
+          <div className="bg-slate-200/50 text-white rounded-lg w-50 h-65 flex items-center justify-center text-[90px] font-bold backdrop-blur-sm border-5 border-white">
             {timeLeft.minutes}
           </div>
-          <span className="text-3xl bg-slate-200 text-slate-800 rounded-lg flex items-center justify-center p-4 px-6 w-50 mt-4 font-bold">
+          <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] text-[40px] bg-slate-200/0 text-white rounded-lg flex items-center justify-center p-4 px-6 w-50 font-bold">
             Minutes
           </span>
         </div>
 
         {/* Seconds */}
         <div className="flex flex-col items-center">
-          <div className="bg-slate-200/50 text-slate-800 rounded-lg w-50 h-65 flex items-center justify-center text-6xl font-bold backdrop-blur-sm border-5 border-white">
+          <div className="bg-slate-200/50 text-white rounded-lg w-50 h-65 flex items-center justify-center text-[90px] font-bold backdrop-blur-sm border-5 border-white">
             {timeLeft.seconds}
           </div>
-          <span className="text-3xl bg-slate-200 text-slate-800 rounded-lg flex items-center justify-center p-4 px-6 w-50 mt-4 font-bold">
+          <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] text-[40px] bg-slate-200/0 text-white rounded-lg flex items-center justify-center p-4 px-6 w-50 font-bold">
             Seconds
           </span>
         </div>
