@@ -1,5 +1,4 @@
 'use client';
-import Image from "next/image";
 import { useState } from "react";
 
 // Sample schedule data - you can replace this with your actual data
