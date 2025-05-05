@@ -12,7 +12,7 @@ export default function Logos() {
           alt="Oweek Logo"
           width={125}
           height={125}
-          className="object-contain"
+          className="object-contain w-[80%]"
         />
       </div>
 
@@ -23,7 +23,7 @@ export default function Logos() {
           alt="UC Logo"
           width={150}
           height={150}
-          className="object-contain"
+          className="object-contain w-[60%]"
         />
       </div>
     </div>

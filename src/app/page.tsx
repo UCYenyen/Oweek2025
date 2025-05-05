@@ -35,7 +35,7 @@ export default function Home() {
               <Image className="absolute bottom-0 left-0" width={200} src={AssetFour} alt="Description of Asset One" draggable='false'/>
               <Schedule />
               <div className="pt-5"></div>
-              <MapLocation />
+              <MapLocation/>
             </div>
           </div>
       </div>
