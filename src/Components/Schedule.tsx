@@ -5,7 +5,7 @@ import { useState } from "react";
 const scheduleData = [
   {
     day: "PRA-OWEEK",
-    title: "PRA-OWEEK",
+    title: "DAY 0",
     date: "16 Agustus 2025",
     location: "UC Plaza",
     sessions: [
@@ -15,7 +15,7 @@ const scheduleData = [
   },
   {
     day: "INDEPENCEDNCE DAY",
-    title: "INDEPENDENCE DAY",
+    title: "FLAG CEREMONY",
     date: "17 Agustus 2025",
     location: "UC Plaza",
     sessions: [
