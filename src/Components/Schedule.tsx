@@ -15,7 +15,7 @@ const scheduleData = [
   },
   {
     day: "INDEPENCEDNCE DAY",
-    title: "FLAG CEREMONY",
+    title: "INDEPENDENCE DAY CEREMONY",
     date: "17 Agustus 2025",
     location: "UC Plaza",
     sessions: [
@@ -27,7 +27,7 @@ const scheduleData = [
     day: "OWEEK 2025",
     title: "DAY 1",
     date: "25 Agustus 2025",
-    location: "-",
+    location: "TBA",
     sessions: [
       "",
       ""
@@ -37,7 +37,7 @@ const scheduleData = [
     day: "OWEEK 2025",
     title: "DAY 2",
     date: "26 Agustus 2025",
-    location: "-",
+    location: "TBA",
     sessions: [
       "",
       ""
@@ -47,7 +47,7 @@ const scheduleData = [
     day: "OWEEK 2025",
     title: "DAY 3",
     date: "27 Agustus 2025",
-    location: "-",
+    location: "TBA",
     sessions: [
       "",
       ""
@@ -57,7 +57,7 @@ const scheduleData = [
     day: "OWEEK 2025",
     title: "DAY 4",
     date: "28 Agustus 2025",
-    location: "-",
+    location: "TBA",
     sessions: [
       "",
       ""
@@ -67,7 +67,7 @@ const scheduleData = [
     day: "OWEEK 2025",
     title: "DAY 5",
     date: "29 Agustus 2025",
-    location: "-",
+    location: "TBA",
     sessions: [
       "",
       ""
@@ -77,7 +77,7 @@ const scheduleData = [
     day: "OWEEK 2025",
     title: "DAY 6",
     date: "30 Agustus 2025",
-    location: "-",
+    location: "TBA",
     sessions: [
       "",
       ""

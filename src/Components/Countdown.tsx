@@ -41,7 +41,7 @@ export default function Countdown() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
                 {/* Days */}
         <div className="flex flex-col items-center">
-          <div className="bg-slate-200/50 text-white rounded-lg w-50 h-65 flex items-center justify-center text-[90px] font-bold backdrop-blur-[4px] border-5 border-white">
+          <div className="bg-slate-200/30 text-white rounded-lg w-50 h-65 flex items-center justify-center text-[90px] font-bold backdrop-blur-[4px] border-white">
             {timeLeft.days}
           </div>
           <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] text-[40px] bg-slate-200/0 text-white rounded-lg flex items-center justify-center p-4 px-6 w-50 font-bold ">
@@ -51,7 +51,7 @@ export default function Countdown() {
 
         {/* Hours */}
         <div className="flex flex-col items-center">
-          <div className="bg-slate-200/50 text-white rounded-lg w-50 h-65 flex items-center justify-center text-[90px] font-bold backdrop-blur-[4px] border-5 border-white">
+          <div className="bg-slate-200/20 text-white rounded-lg w-50 h-65 flex items-center justify-center text-[90px] font-bold backdrop-blur-[4px] border-white">
             {timeLeft.hours}
           </div>
           <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] text-[40px] bg-slate-200/0 text-white rounded-lg flex items-center justify-center p-4 px-6 w-50 font-bold">
@@ -61,7 +61,7 @@ export default function Countdown() {
 
         {/* Minutes */}
         <div className="flex flex-col items-center">
-          <div className="bg-slate-200/50 text-white rounded-lg w-50 h-65 flex items-center justify-center text-[90px] font-bold backdrop-blur-[4px] border-5 border-white">
+          <div className="bg-slate-200/15 text-white rounded-lg w-50 h-65 flex items-center justify-center text-[90px] font-bold backdrop-blur-[4px] border-white">
             {timeLeft.minutes}
           </div>
           <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] text-[40px] bg-slate-200/0 text-white rounded-lg flex items-center justify-center p-4 px-6 w-50 font-bold">
@@ -71,7 +71,7 @@ export default function Countdown() {
 
         {/* Seconds */}
         <div className="flex flex-col items-center">
-          <div className="bg-slate-200/50 text-white rounded-lg w-50 h-65 flex items-center justify-center text-[90px] font-bold backdrop-blur-[4px] border-5 border-white">
+          <div className="bg-slate-200/10 text-white rounded-lg w-50 h-65 flex items-center justify-center text-[90px] font-bold backdrop-blur-[4px] border-white">
             {timeLeft.seconds}
           </div>
           <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] text-[40px] bg-slate-200/0 text-white rounded-lg flex items-center justify-center p-4 px-6 w-50 font-bold">
