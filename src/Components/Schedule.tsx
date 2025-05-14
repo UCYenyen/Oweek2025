@@ -102,14 +102,14 @@ export default function Schedule() {
         
         {/* Day indicator pill */}
         <div className="flex justify-center relative z-20">
-          <p className="absolute -top-5 bg-white p-2 md:p-3 rounded-xl text-black font-bold text-2xl md:text-4xl transform -translate-y-1/2 shadow-lg">
+          <p className="absolute text-center -top-5 bg-white p-2 md:p-3 rounded-xl text-black font-bold text-xl sm:text-2xl md:text-4xl transform -translate-y-1/2 shadow-lg">
             {schedule.day}
           </p>
         </div>
         
         {/* Content */}
         <div className="flex flex-col items-center mt-8 md:mt-10 relative z-20">
-          <h1 className="pt-4 text-white font-bold text-3xl md:text-4xl">
+          <h1 className="pt-4 text-center text-white font-bold text-xl sm:text-2xl md:text-4xl">
             {schedule.title}
           </h1>
           <h2 className="text-white text-lg md:text-xl mt-2">

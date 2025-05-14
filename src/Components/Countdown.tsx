@@ -37,7 +37,7 @@ export default function Countdown() {
 
   return (
     <div className="relative flex flex-col items-center justify-center py-8">
-        <h2 className="text-[60px] sm:text-[80px] md:text-[80px] lg:text-[100px] xl:text-[100px] font-bold mb-0 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">OWEEK 2025</h2>
+        <h2 className="text-[60px] text-center sm:text-[80px] md:text-[80px] lg:text-[100px] xl:text-[100px] font-bold mb-0 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">OWEEK 2025</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
                 {/* Days */}
         <div className="flex flex-col items-center">
