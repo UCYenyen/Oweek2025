@@ -9,18 +9,18 @@ const scheduleData = [
     date: "16 Agustus 2025",
     location: "UC Plaza",
     sessions: [
-      "",
-      ""
+      "Kloter 1 (7:15 - 10:00)",
+      "Kloter 2 (10:45 - 13:00)"
     ]
   },
   {
-    day: "INDEPENCEDNCE DAY",
+    day: "INDEPENDENCE DAY",
     title: "INDEPENDENCE DAY CEREMONY",
     date: "17 Agustus 2025",
     location: "UC Plaza",
     sessions: [
-      "",
-      ""
+      "Flag Ceremony (6:30 - 18:00)",
+      "5 Seminars"
     ]
   },
   {
@@ -29,8 +29,9 @@ const scheduleData = [
     date: "25 Agustus 2025",
     location: "TBA",
     sessions: [
-      "",
-      ""
+      "Opening",
+      "Talkshow",
+      "Ormawa Fest (7:00 - 16:30)"
     ]
   },
   {
@@ -39,8 +40,7 @@ const scheduleData = [
     date: "26 Agustus 2025",
     location: "TBA",
     sessions: [
-      "",
-      ""
+      "Pra-LDK (7:00 - 17:00)"
     ]
   },
   {
@@ -49,8 +49,7 @@ const scheduleData = [
     date: "27 Agustus 2025",
     location: "TBA",
     sessions: [
-      "",
-      ""
+      "Prodi Day (7:00 - 16:30)"
     ]
   },
   {
@@ -59,8 +58,7 @@ const scheduleData = [
     date: "28 Agustus 2025",
     location: "TBA",
     sessions: [
-      "",
-      ""
+      "Student Development Program (7:00 - 11:30)"
     ]
   },
   {
@@ -69,8 +67,7 @@ const scheduleData = [
     date: "29 Agustus 2025",
     location: "TBA",
     sessions: [
-      "",
-      ""
+      "Selling Day (8:30 - 20:00)"
     ]
   },
   {
@@ -79,11 +76,9 @@ const scheduleData = [
     date: "30 Agustus 2025",
     location: "TBA",
     sessions: [
-      "",
-      ""
+      "Closing Day (13:00 - 22:00)"
     ]
-  },
-  // Add more days as needed
+  }
 ];
 
 export default function Schedule() {
