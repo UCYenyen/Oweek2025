@@ -5,16 +5,16 @@ import { useState } from "react";
 const scheduleData = [
   {
     day: "PRA-OWEEK",
-    title: "DAY 0",
+    title: "PRA-OWEEK",
     date: "16 Agustus 2025",
-    location: "UC Plaza",
+    location: "Zoom Meeting",
     sessions: [
       "Kloter 1 (7:15 - 10:00)",
       "Kloter 2 (10:45 - 13:00)"
     ]
   },
   {
-    day: "INDEPENDENCE DAY",
+    day: "OWEEK 2025",
     title: "INDEPENDENCE DAY CEREMONY",
     date: "17 Agustus 2025",
     location: "UC Plaza",
@@ -25,9 +25,27 @@ const scheduleData = [
   },
   {
     day: "OWEEK 2025",
+    title: "MATRIKULASI JURUSAN",
+    date: "19-21 Agustus 2025",
+    location: "Universitas Ciputra Surabaya",
+    sessions: [
+      "Jadwal mengikuti Program Studi masing masing"
+    ]
+  },
+  {
+    day: "OWEEK 2025",
+    title: "PARENTS GATHERING",
+    date: "22 Agustus 2025",
+    location: "Universitas Ciputra Surabaya",
+    sessions: [
+      " "
+    ]
+  },
+  {
+    day: "OWEEK 2025",
     title: "DAY 1",
     date: "25 Agustus 2025",
-    location: "TBA",
+    location: "Universitas Ciputra Surabaya",
     sessions: [
       "Opening",
       "Talkshow",
@@ -38,7 +56,7 @@ const scheduleData = [
     day: "OWEEK 2025",
     title: "DAY 2",
     date: "26 Agustus 2025",
-    location: "TBA",
+    location: "Universitas Ciputra Surabaya",
     sessions: [
       "Pra-LDK (7:00 - 17:00)"
     ]
@@ -47,7 +65,7 @@ const scheduleData = [
     day: "OWEEK 2025",
     title: "DAY 3",
     date: "27 Agustus 2025",
-    location: "TBA",
+    location: "Universitas Ciputra Surabaya",
     sessions: [
       "Prodi Day (7:00 - 16:30)"
     ]
@@ -56,7 +74,7 @@ const scheduleData = [
     day: "OWEEK 2025",
     title: "DAY 4",
     date: "28 Agustus 2025",
-    location: "TBA",
+    location: "Universitas Ciputra Surabaya",
     sessions: [
       "Student Development Program (7:00 - 11:30)"
     ]
@@ -65,7 +83,7 @@ const scheduleData = [
     day: "OWEEK 2025",
     title: "DAY 5",
     date: "29 Agustus 2025",
-    location: "TBA",
+    location: "Ciputra World Mall Surabaya",
     sessions: [
       "Selling Day (8:30 - 20:00)"
     ]
@@ -74,7 +92,7 @@ const scheduleData = [
     day: "OWEEK 2025",
     title: "DAY 6",
     date: "30 Agustus 2025",
-    location: "TBA",
+    location: "Ciputra World Mall Surabaya",
     sessions: [
       "Closing Day (13:00 - 22:00)"
     ]
