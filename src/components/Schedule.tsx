@@ -137,18 +137,18 @@ export default function Schedule() {
             {schedule.location}
           </h3>
           
-          <div className="mt-6 space-y-4 w-full max-w-md">
+          <div className="mt-6 w-full max-w-md">
             {schedule.sessions.length > 0 ? (
               schedule.sessions.map((session, index) => (
                 <div 
                   key={index} 
-                  className="bg-white/0 backdrop-blur-sm p-3 rounded-lg text-white text-center text-lg md:text-xl"
+                  className="bg-white/0 backdrop-blur-sm p-1 rounded-lg text-white text-center text-lg md:text-xl"
                 >
                   {session}  
                 </div>
               ))
             ) : (
-              <div className="bg-white/20 backdrop-blur-sm p-3 rounded-lg text-white text-center text-lg md:text-xl">
+              <div className="bg-white/20 backdrop-blur-sm p-1 rounded-lg text-white text-center text-lg md:text-xl">
                 {/* No sessions scheduled for this day */}
               </div>
             )}
