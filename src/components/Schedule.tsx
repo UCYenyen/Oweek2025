@@ -170,6 +170,22 @@ export default function Schedule() {
         >
           {">"}
         </button>
+
+        {/* Bottom Navigation Buttons */}
+        <button
+          onClick={prevDay}
+          className="absolute bottom-4 left-4 bg-white/80 py-2 px-4 rounded-lg text-black font-semibold shadow-md hover:bg-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-500 z-20"
+          aria-label="Previous day"
+        >
+          Previous
+        </button>
+        <button
+          onClick={nextDay}
+          className="absolute bottom-4 right-4 bg-white/80 py-2 px-4 rounded-lg text-black font-semibold shadow-md hover:bg-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-500 z-20"
+          aria-label="Next day"
+        >
+          Next
+        </button>
       </div>
     </div>
   );
