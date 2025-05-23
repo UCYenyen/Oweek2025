@@ -101,6 +101,7 @@ const scheduleData = [
 
 export default function Schedule() {
   const [currentDay, setCurrentDay] = useState(0);
+  const [isDressCodePopupOpen, setIsDressCodePopupOpen] = useState(false);
 
   const nextDay = () => {
     setCurrentDay((prev) => (prev + 1) % scheduleData.length);
@@ -109,6 +110,14 @@ export default function Schedule() {
   const prevDay = () => {
     setCurrentDay((prev) => (prev - 1 + scheduleData.length) % scheduleData.length);
   };
+
+  const openDressCode = () => {
+    setIsDressCodePopupOpen(true);
+  };
+  const closeDressCodePopup = () => {
+    setIsDressCodePopupOpen(false);
+  };
+
 
   const schedule = scheduleData[currentDay];
 
@@ -126,7 +135,7 @@ export default function Schedule() {
         </div>
         
         {/* Content */}
-        <div className="flex flex-col items-center mt-8 md:mt-10 relative z-20">
+        <div className="flex flex-col items-center mt-8 pb-10 md:mt-10 relative z-20">
           <h1 className="pt-4 text-center text-white font-bold text-xl sm:text-2xl md:text-4xl">
             {schedule.title}
           </h1>
@@ -177,16 +186,27 @@ export default function Schedule() {
           className="absolute bottom-4 left-4 bg-white/80 py-2 px-4 rounded-lg text-black font-semibold shadow-md hover:bg-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-500 z-20"
           aria-label="Previous day"
         >
-          Previous
+          Button 1
         </button>
         <button
-          onClick={nextDay}
+          onClick={openDressCode}
           className="absolute bottom-4 right-4 bg-white/80 py-2 px-4 rounded-lg text-black font-semibold shadow-md hover:bg-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-500 z-20"
           aria-label="Next day"
         >
-          Next
+          Dresscode
         </button>
       </div>
+            {isDressCodePopupOpen&& (
+              <div className="fixed inset-0 bg-[#F9A817]/50 items-center justify-center z-50">
+                <div className="bg-white rounded-lg p-8 shadow-lg max-w-md mx-auto mt-20">
+                  <button onClick={closeDressCodePopup} className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-2xl font-bold" aria-label="Close">
+                    
+                  </button>
+                  <h2>Stuff</h2>
+                  <p>description</p>
+                </div>
+              </div>
+            )}
     </div>
   );
 
