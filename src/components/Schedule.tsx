@@ -11,7 +11,14 @@ const scheduleData = [
     sessions: [
       "Kloter 1 (7:15 - 10:00)",
       "Kloter 2 (10:45 - 13:00)"
-    ]
+    ],
+    baju: "",
+    celana: "",
+    sepatu: "",
+    extra: "",
+    baju2: "",
+    celana2: "",
+    sepatu2: ""
   },
   {
     day: "OWEEK 2025",
@@ -21,7 +28,14 @@ const scheduleData = [
     sessions: [
       "Flag Ceremony (6:30 - 18:00)",
       "5 Seminars"
-    ]
+    ],
+    baju: "Kemeja Putih",
+    celana: "Celana Hitam Formal",
+    sepatu: "Sepatu Hitam",
+    extra: "",
+    baju2: "",
+    celana2: "",
+    sepatu2: ""
   },
   {
     day: "OWEEK 2025",
@@ -30,7 +44,14 @@ const scheduleData = [
     location: "Universitas Ciputra Surabaya",
     sessions: [
       "Jadwal mengikuti Program Studi masing masing"
-    ]
+    ],
+    baju: "",
+    celana: "",
+    sepatu: "",
+    extra: "",
+    baju2: "",
+    celana2: "",
+    sepatu2: ""
   },
   {
     day: "OWEEK 2025",
@@ -39,7 +60,14 @@ const scheduleData = [
     location: "Universitas Ciputra Surabaya",
     sessions: [
       " "
-    ]
+    ],
+    baju: "",
+    celana: "",
+    sepatu: "",
+    extra: "",
+    baju2: "",
+    celana2: "",
+    sepatu2: ""
   },
   {
     day: "OWEEK 2025",
@@ -50,7 +78,15 @@ const scheduleData = [
       "Opening",
       "Talkshow",
       "Ormawa Fest (7:00 - 16:30)"
-    ]
+    ],
+    //ini untuk dressocde (mulai d-day oweek)
+    baju: "Baju: Kemeja Putih",
+    celana: "Celana: Celana Hitam ",
+    sepatu: "Sepatu: Sepatu Sneakers",
+    extra: "",
+    baju2: "",
+    celana2: "",
+    sepatu2: ""
   },
   {
     day: "OWEEK 2025",
@@ -59,7 +95,14 @@ const scheduleData = [
     location: "Universitas Ciputra Surabaya",
     sessions: [
       "Pra-LDK (7:00 - 17:00)"
-    ]
+    ],
+    baju: "Baju: Baju Batik Sopan",
+    celana: "Celana: Celana Panjang Bebas",
+    sepatu: "Sepatu: Sepatu Sneakers",
+    extra: "",
+    baju2: "",
+    celana2: "",
+    sepatu2: ""
   },
   {
     day: "OWEEK 2025",
@@ -68,7 +111,14 @@ const scheduleData = [
     location: "Universitas Ciputra Surabaya",
     sessions: [
       "Prodi Day (7:00 - 16:30)"
-    ]
+    ],
+    baju: "Sesuai dengan ketentuan masing masing prodi",
+    celana: "",
+    sepatu: "",
+    extra: "",
+    baju2: "",
+    celana2: "",
+    sepatu2: ""
   },
   {
     day: "OWEEK 2025",
@@ -77,7 +127,14 @@ const scheduleData = [
     location: "Universitas Ciputra Surabaya",
     sessions: [
       "Student Development Program (7:00 - 11:30)"
-    ]
+    ],
+    baju: "Baju: Kemeja / Blouse Berkerah",
+    celana: "Celana: Celana Panjang Bebas",
+    sepatu: "Sepatu: Sepatu Bebas",
+    extra: "",
+    baju2: "",
+    celana2: "",
+    sepatu2: ""
   },
   {
     day: "OWEEK 2025",
@@ -86,7 +143,14 @@ const scheduleData = [
     location: "Ciputra World Mall Surabaya",
     sessions: [
       "Selling Day (8:30 - 20:00)"
-    ]
+    ],
+    baju: "Baju: Kaos Universitas Ciputra Surabaya",
+    celana: "Celana: Celana Panjang",
+    sepatu: "Sepatu: Sepatu Bebas",
+    extra: "",
+    baju2: "",
+    celana2: "",
+    sepatu2: ""
   },
   {
     day: "OWEEK 2025",
@@ -95,7 +159,14 @@ const scheduleData = [
     location: "Ciputra World Mall Surabaya",
     sessions: [
       "Closing Day (13:00 - 22:00)"
-    ]
+    ],
+    baju: "Baju: Kemeja Putih",
+    celana: "Celana: Celana Panjang Hitam",
+    sepatu: "Sepatu: Celana Bebas",
+    extra: "Setiap Trainee harus membawa Almameter",
+    baju2: "Baju: Kemeja Putih",
+    celana2: "Celana: Rok / Celana Hitam Panjang Dibawah Lutut",
+    sepatu2: "Sepatu: Sepatu Bebas"
   }
 ];
 
@@ -180,7 +251,6 @@ export default function Schedule() {
           {">"}
         </button>
 
-        {/* Bottom Navigation Buttons */}
         <button
           onClick={prevDay}
           className="absolute bottom-4 left-4 bg-white/80 py-2 px-4 rounded-lg text-black font-semibold shadow-md hover:bg-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-500 z-20"
@@ -196,17 +266,27 @@ export default function Schedule() {
           Dresscode
         </button>
       </div>
-            {isDressCodePopupOpen&& (
-              <div className="fixed inset-0 bg-[#F9A817]/50 items-center justify-center z-50">
-                <div className="bg-white rounded-lg p-8 shadow-lg max-w-md mx-auto mt-20">
-                  <button onClick={closeDressCodePopup} className="absolute top-2 right-2 text-gray-500 hover:text-gray-700 text-2xl font-bold" aria-label="Close">
-                    
-                  </button>
-                  <h2>Stuff</h2>
-                  <p>description</p>
-                </div>
-              </div>
-            )}
+        {isDressCodePopupOpen && (
+          <div className="fixed inset-0 bg-[#F9A817]/50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white rounded-lg p-8 shadow-lg max-w-md w-full mx-auto mt-20 relative">
+              <button 
+                onClick={closeDressCodePopup} 
+                className="absolute top-3 right-3 text-gray-500 hover:text-gray-700 text-2xl font-bold" 
+                aria-label="Close"
+              >
+                &times;
+              </button>
+              <h2 className="text-2xl font-bold mb-4 text-center text-gray-800">{schedule.title}</h2>
+              <p className="text-gray-700 text-center">{schedule.baju}</p>
+              <p className="text-gray-700 text-center">{schedule.celana}</p>
+              <p className="text-gray-700 text-center">{schedule.sepatu}</p>
+              <p className="text-gray-700 text-center">{schedule.extra}</p>
+              <p className="text-gray-700 text-center">{schedule.baju2}</p>
+              <p className="text-gray-700 text-center">{schedule.celana2}</p>
+              <p className="text-gray-700 text-center">{schedule.sepatu2}</p>
+            </div>
+          </div>
+        )}
     </div>
   );
 
