@@ -7,7 +7,7 @@ function App() {
     <div className="" >
        {/* <DisableZoom /> */}
       <div className="overflow-x-hidden min-h-screen flex flex-col items-center">
-        <div className="relative bg-gradient-to-b from-[#e77a21] via-[#e2930a] to-[#e77a21] h-auto -z-[20]">
+        <div className="relative bg-gradient-to-b from-[#f4b64b] via-[#e2930a] to-[#e77a21] h-auto -z-[20]">
             <img
                 className="absolute top-0 right-0 -z-10 w-[40%]"
                 width={600}
