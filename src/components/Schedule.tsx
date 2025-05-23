@@ -115,7 +115,7 @@ export default function Schedule() {
   return (
     <div className="w-full py-12">
       <div className="relative w-full max-w-4xl mx-auto bg-[#F9A817] rounded-2xl p-6 md:p-8 shadow-lg">
-        <div className="absolute top-5 -left-4 bg-[#D86710] w-[103.5%] h-[105%] rounded-2xl z-0"></div>
+        <div className="absolute top-2.5 -left-3.5 md:-left-4.5 lg:-left-4 bg-[#D86710] w-[110%] md:w-[105.5%] lg:w-[103.5%] h-[105%] rounded-2xl z-0"></div>
         <div className="absolute top-0 left-0 bg-[#F9A817] w-full h-full rounded-2xl z-10"></div>
         
         {/* Day indicator pill */}

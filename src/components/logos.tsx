@@ -10,8 +10,8 @@ export default function Logos() {
         <img
           src={oweekLogo}
           alt="Oweek Logo"
-          width={100}
-          height={100}
+          width={70}
+          height={70}
           className="object-contain"
         />
       </div>
@@ -21,8 +21,8 @@ export default function Logos() {
         <img
           src={logoUC}
           alt="UC Logo"
-          width={130}
-          height={130}
+          width={100}
+          height={100}
           className="object-contain"
         />
       </div>

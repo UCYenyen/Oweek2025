@@ -1,5 +1,4 @@
 'use client';
-// Countdown.tsx
 
 import { useState, useEffect } from 'react';
 
@@ -37,47 +36,52 @@ export default function Countdown() {
 
   return (
     <div className="relative flex flex-col items-center justify-center py-8">
-        <h2 className="text-[60px] text-center sm:text-[80px] md:text-[80px] lg:text-[100px] xl:text-[100px] font-bold mb-0 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">OWEEK 2025</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 text-center">
-                {/* Days */}
-        <div className="flex flex-col items-center">
-          <div className="bg-slate-200/30 text-white rounded-lg w-50 h-65 flex items-center justify-center text-[90px] font-bold backdrop-blur-[4px] border-white">
-            {timeLeft.days}
-          </div>
-          <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] text-[40px] bg-slate-200/0 text-white rounded-lg flex items-center justify-center p-4 px-6 w-50 font-bold ">
-            Days
-          </span>
-        </div>
+        <h2 className="text-[40px] text-center sm:text-[80px] md:text-[80px] lg:text-[100px] xl:text-[100px] font-bold mb-0 text-white drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)]">OWEEK 2025</h2>
+        <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-5 lg:gap-5 text-center">
+            {/* Days */}
+            <div className="flex flex-col items-center">
+              <div className="bg-slate-200/30 text-white rounded-lg p-3 flex items-center justify-center font-bold backdrop-blur-[4px] border-white w-full">
+                <h1 className='text-[60px] sm:text-[70px] md:text-[80px] lg:text-[90px] xl:text-[100px]'>
+                  {timeLeft.days.toString().padStart(2, '0')}
+                </h1>
+              </div>
+              <h1 className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] text-[30px] text-white rounded-lg flex items-center justify-center font-bold ">
+                Days
+              </h1>
+            </div>
 
-        {/* Hours */}
-        <div className="flex flex-col items-center">
-          <div className="bg-slate-200/20 text-white rounded-lg w-50 h-65 flex items-center justify-center text-[90px] font-bold backdrop-blur-[4px] border-white">
-            {timeLeft.hours}
-          </div>
-          <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] text-[40px] bg-slate-200/0 text-white rounded-lg flex items-center justify-center p-4 px-6 w-50 font-bold">
-            Hours
-          </span>
-        </div>
+            <div className="flex flex-col items-center">
+              <div className="bg-slate-200/30 text-white rounded-lg p-3 flex items-center justify-center font-bold backdrop-blur-[4px] border-white w-full">
+                <h1 className='text-[60px] sm:text-[70px] md:text-[80px] lg:text-[90px] xl:text-[100px]'>
+                  {timeLeft.hours.toString().padStart(2, '0')}
+                </h1>
+              </div>
+              <h1 className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] text-[30px] text-white rounded-lg flex items-center justify-center font-bold ">
+                Hours
+              </h1>
+            </div>
 
-        {/* Minutes */}
-        <div className="flex flex-col items-center">
-          <div className="bg-slate-200/15 text-white rounded-lg w-50 h-65 flex items-center justify-center text-[90px] font-bold backdrop-blur-[4px] border-white">
-            {timeLeft.minutes}
-          </div>
-          <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] text-[40px] bg-slate-200/0 text-white rounded-lg flex items-center justify-center p-4 px-6 w-50 font-bold">
-            Minutes
-          </span>
-        </div>
+            <div className="flex flex-col items-center">
+              <div className="bg-slate-200/30 text-white rounded-lg p-3 flex items-center justify-center font-bold backdrop-blur-[4px] border-white w-full">
+                <h1 className='text-[60px] sm:text-[70px] md:text-[80px] lg:text-[90px] xl:text-[100px]'>
+                  {timeLeft.minutes.toString().padStart(2, '0')}
+                </h1>
+              </div>
+              <h1 className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] text-[30px] text-white rounded-lg flex items-center justify-center font-bold ">
+                Minues
+              </h1>
+            </div>
 
-        {/* Seconds */}
-        <div className="flex flex-col items-center">
-          <div className="bg-slate-200/10 text-white rounded-lg w-50 h-65 flex items-center justify-center text-[90px] font-bold backdrop-blur-[4px] border-white">
-            {timeLeft.seconds}
-          </div>
-          <span className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] text-[40px] bg-slate-200/0 text-white rounded-lg flex items-center justify-center p-4 px-6 w-50 font-bold">
-            Seconds
-          </span>
-        </div>
+            <div className="flex flex-col items-center">
+              <div className="bg-slate-200/30 text-white rounded-lg p-3 flex items-center justify-center font-bold backdrop-blur-[4px] border-white w-full">
+                <h1 className='text-[60px] sm:text-[70px] md:text-[80px] lg:text-[90px] xl:text-[100px]'>
+                  {timeLeft.seconds.toString().padStart(2, '0')}
+                </h1>
+              </div>
+              <h1 className="drop-shadow-[0_2px_4px_rgba(0,0,0,0.3)] text-[30px] text-white rounded-lg flex items-center justify-center font-bold ">
+                Seconds
+              </h1>
+            </div>
       </div>
     </div>
   );
