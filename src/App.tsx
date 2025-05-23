@@ -7,7 +7,7 @@ function App() {
     <div className="" >
        {/* <DisableZoom /> */}
       <div className="overflow-x-hidden min-h-screen flex flex-col items-center">
-        <div className="relative bg-gradient-to-b from-[#d76b12] via-[#e2930a] to-[#e77a21] h-auto -z-[20]">
+        <div className="relative bg-gradient-to-b from-[#d76b12] via-[#e2930a] to-[#e77a21] h-auto">
             <img
                 className="absolute top-0 right-0 -z-10 w-[40%]"
                 width={600}
@@ -19,7 +19,7 @@ function App() {
             <Logos />
             <Countdown />
             {/* original gradient color : bg-gradient-to-b from-[#f9a817] via-[#e77a21] to-[#d76b12] */}
-            <div className="relative w-screen pb-20 px-20 -z-[20]">
+            <div className="relative w-screen pb-20 px-20">
               <img
                 className="absolute bottom-0 left-0 rotate-180 -z-10 w-[30vw]"
                 width={400}
